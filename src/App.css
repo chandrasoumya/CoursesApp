@@ -1,0 +1,410 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  background-color: #212731;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+}
+.header .searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 265px;
+  height: 37px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px;
+  gap: 12px;
+}
+.header .searchbar input {
+  width: 215px;
+  height: 30px;
+  border: 1px;
+}
+.header .searchbar img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: 5px;
+}
+.header ul {
+  display: flex;
+  gap: 30px;
+}
+.header ul li {
+  list-style: none;
+  color: White;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header ul li:hover {
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .mainhead h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main .mainhead .updates {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  gap: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #4B5665;
+}
+.main .mainhead .updates div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main .mainhead .updates div img {
+  height: 20px;
+}
+.main .mainhead .updates .dropdown {
+  margin-left: auto;
+}
+.main .mainhead .updates .dropdown #dropdown {
+  width: 130px;
+  height: 20px;
+  border: 0px;
+  background-color: white;
+  color: #4B5665;
+  font-size: 15px;
+}
+.main .mainhead .tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #4B5665;
+  flex-wrap: wrap;
+}
+.main .mainhead .tags li {
+  list-style: none;
+}
+.main .mainhead .path {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #4B5665;
+}
+.main .maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  gap: 40px;
+}
+.main .maincontainer .courses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80vw;
+  gap: 15px;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+.main .maincontainer .courses .courseimage {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.main .maincontainer .courses .courseimage .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid gray;
+  position: relative;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+.main .maincontainer .courses .courseimage img {
+  width: 160px;
+  height: 150px;
+}
+.main .maincontainer .courses .courseimage .name {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #626E79;
+}
+.main .maincontainer .courses .coursecontain {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main .maincontainer .courses .coursecontain h3 {
+  text-align: left;
+}
+.main .maincontainer .courses .coursecontain p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main .maincontainer .courses .coursecontain p span {
+  font-weight: 700;
+  font-size: 18px;
+}
+.main .maincontainer .courses .courserating {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 250px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .maincontainer .courses .courserating .rating {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 10px;
+  border-radius: 0px, 0px, 12px, 12px;
+  background-color: #F3F9FF;
+  gap: 0px;
+  align-items: center;
+}
+.main .maincontainer .courses .courserating .rating p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #074786;
+}
+.main .maincontainer .courses .courserating .rating .rate {
+  font-weight: 400;
+  font-size: 25px;
+}
+.main .maincontainer .courses .courserating .rating .star {
+  display: flex;
+}
+.main .maincontainer .courses .courserating .buttonContainer {
+  margin-top: auto;
+  text-align: center;
+}
+.main .maincontainer .courses .courserating .buttonContainer button {
+  margin-bottom: auto;
+  width: 232px;
+  height: 48px;
+  background-color: #1B88F4;
+  border-radius: 12px;
+  font-size: 17px;
+  color: white;
+  border: 0px;
+}
+.main .dealscontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.main .dealscontainer h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2C384A;
+}
+.main .dealscontainer .alldeals {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  overflow-x: scroll;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.main .dealscontainer .alldeals::-webkit-scrollbar {
+  display: none;
+}
+.main .dealscontainer .alldeals .deals {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.main .dealscontainer .alldeals .deals .offers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main .dealscontainer .alldeals .deals .offers li {
+  width: 200px;
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+  width: 53px;
+  height: 20px;
+  border-radius: 5px;
+}
+.main .dealscontainer .alldeals .deals .prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main .dealscontainer .alldeals .deals .prices li {
+  list-style: none;
+}
+.main .dealscontainer .alldeals .deals .prices .price {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C6874;
+}
+.main .dealscontainer .alldeals .deals .prices .previousprice {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9FA9B3;
+}
+.main .dealscontainer .alldeals .deals .prices .discount {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EF4C5D;
+}
+.main .dealscontainer .alldeals .deals button {
+  width: 292px;
+  height: 48px;
+  top: 2163px;
+  left: 320px;
+  border-radius: 12px;
+  background-color: #1B88F4;
+  border: 0px;
+  font-size: 16px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212731;
+  padding-bottom: 20px;
+  width: 100vw;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 400;
+  color: White;
+  gap: 5px;
+}
+.footer div li {
+  list-style: none;
+}
+.footer div #dropdown {
+  color: White;
+  background-color: #212731;
+  border: 0px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 110px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .main .mainhead .updates {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .mainhead h1 {
+    font-size: 25px;
+  }
+  .main .mainhead .tags {
+    gap: 10px;
+    width: 90vw;
+  }
+  .main .maincontainer .courses {
+    flex-direction: column;
+  }
+  .main .dealscontainer h1 {
+    font-size: 25px;
+  }
+  .main .dealscontainer .alldeals {
+    width: 98vw;
+  }
+  .main .dealscontainer .alldeals .deals {
+    left: 140px;
+  }
+  .main .dealscontainer .alldeals .deals img {
+    width: 200px;
+  }
+  .main .dealscontainer .alldeals .deals button {
+    width: 150px;
+  }
+  .footer {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=App.css.map */
