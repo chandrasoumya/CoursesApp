@@ -319,7 +319,8 @@
       gap: 30px;
       justify-content: center;
       align-items: center;
-
+      margin: 0px;
+      padding: 0px;
       &::-webkit-scrollbar {
         display: none;
       }
@@ -332,6 +333,8 @@
         left: 50px;
         justify-content: center;
         align-items: center;
+        margin: 0px;
+        padding: 0px;
 
         .offers {
           display: flex;
