@@ -289,6 +289,9 @@
             font-size: 17px;
             color: white;
             border: 0px;
+            &:hover{
+              background-color: #074786;
+            }
           }
         }
       }
@@ -410,6 +413,9 @@
           border: 0px;
           font-size: 16px;
           color: white;
+          &:hover{
+            background-color: #074786;
+          }
 
         }
       }
