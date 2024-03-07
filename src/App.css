@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -138,7 +139,6 @@
   align-items: center;
   width: 80vw;
   gap: 15px;
-  height: -moz-max-content;
   height: max-content;
   padding-bottom: 15px;
   border-bottom: 1px solid gray;
@@ -208,7 +208,6 @@
   display: flex;
   flex-direction: column;
   width: 135px;
-  height: -moz-max-content;
   height: max-content;
   padding-bottom: 10px;
   border-radius: 0px, 0px, 12px, 12px;
@@ -244,6 +243,9 @@
   color: white;
   border: 0px;
 }
+.main .maincontainer .courses .courserating .buttonContainer button:hover {
+  background-color: #074786;
+}
 .main .dealscontainer {
   display: flex;
   flex-direction: column;
@@ -266,6 +268,8 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 .main .dealscontainer .alldeals::-webkit-scrollbar {
   display: none;
@@ -273,12 +277,13 @@
 .main .dealscontainer .alldeals .deals {
   display: flex;
   flex-direction: column;
-  width: -moz-max-content;
   width: max-content;
   position: relative;
   left: 50px;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 .main .dealscontainer .alldeals .deals .offers {
   display: flex;
@@ -288,7 +293,6 @@
 }
 .main .dealscontainer .alldeals .deals .offers li {
   width: 200px;
-  height: -moz-max-content;
   height: max-content;
   list-style: none;
   width: 53px;
@@ -342,6 +346,9 @@
   font-size: 16px;
   color: white;
 }
+.main .dealscontainer .alldeals .deals button:hover {
+  background-color: #074786;
+}
 
 .footer {
   display: flex;
@@ -376,7 +383,6 @@
     gap: 0px;
   }
   .main .mainhead .updates {
-    height: -moz-max-content;
     height: max-content;
   }
   .main .mainhead h1 {
@@ -407,4 +413,6 @@
   .footer {
     font-size: 13px;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */
